@@ -1,0 +1,64 @@
+.form{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.form__col{
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.form__row{
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.form__block{
+flex: 1;
+margin-right: 20px;
+
+&:last-child{
+    margin-right: 0;
+}
+}
+
+.form__input{
+    width: 100%;
+    //border: solid 3px #dee2bd;
+    border: solid 3px transparent;
+    padding: 18px 11px;
+
+    &--texterea{
+        width: 450px;
+        height: 180px;
+        resize: none;
+    }
+
+    &:focus {
+        border-color: #dee2bd;
+        outline: none;
+    }
+
+}
+
+.form__controls{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form__title{
+    font-size: 18px;
+    color: #365a49;
+
+}
+.form__btns{
+    margin-top: 46px;
+    margin-bottom: 85px;
+}
+
+.form__col--left{
+    margin-left: 85px;
+}

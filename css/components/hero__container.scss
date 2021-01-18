@@ -1,0 +1,26 @@
+.hero__container{
+    position: relative;
+    background: url("../components/img/decor/list1.png") right top 70% no-repeat;
+
+    &:before {
+        content: url("../components/img/decor/Ягоды1.png");
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+
+    }
+    &:after{
+        content: url("../components/img/decor/list2.png");
+        position: absolute;
+        bottom: -5%;
+        right: 15%;
+    }
+
+  
+   
+}
+
+.hero__container-img {
+    position: relative;
+   
+}

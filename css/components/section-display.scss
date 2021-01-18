@@ -1,0 +1,14 @@
+.section-display {
+  
+    
+    position: relative;
+    background: url("../components/img/decor/Узоротзовы.png") left top 100% no-repeat;
+
+    &:after{
+        content: url("../components/img/decor/Ягоды22.png");
+        position: relative;
+       margin-bottom: 15px; 
+    }
+    
+    
+}

@@ -1,0 +1,26 @@
+.section{
+    
+    height: 100vp;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.section__title{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-display{
+    margin-top: 160px;
+}
+.section__title-color{
+    color: #365a49;
+}
+.section__map{
+    width: 100%;
+}

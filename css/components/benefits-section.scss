@@ -1,0 +1,12 @@
+.benefits-section{
+    
+    position: relative;
+    background: url("../components/img/decor/list.png") left top 57% no-repeat;
+
+    &:before {
+        content: url("../components/img/decor/malina.png");
+        position: absolute;
+        bottom: -30%;
+        left: 0;
+    }
+}
