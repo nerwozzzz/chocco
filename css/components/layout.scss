@@ -12,6 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     color: black;
+    margin: 0;
 }
 .wrapper{
    position: relative;
@@ -20,9 +21,9 @@ body {
    min-height: 100%;
    overflow: hidden;
 }
-.conteiner {
+.container {
     margin: 0 auto;
-    width: $containerWidth;
+    max-width: 940px;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;

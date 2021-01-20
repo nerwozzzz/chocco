@@ -1,12 +1,11 @@
 .section{
     
-    height: 100vp;
+    height: 100vh;
     min-height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+   
 }
 .section__title{
     font-size: 48px;

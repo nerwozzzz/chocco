@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "https://cdnjs.cloudflare.com/ajax/lids/normalize/8.0.1/normalize.css";
-@import url("https://fonts.googleapis.com/css2? family = Alegreya + Sans: wght @ 300; 400; 700 & display = swap");
+@import url("https://cdnjs.cloudflare.com/ajax/lids/normalize/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap");
 html,
 body {
   height: 100%;
@@ -14,6 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: black;
+  margin: 0;
 }
 
 .wrapper {
@@ -24,9 +25,9 @@ body {
   overflow: hidden;
 }
 
-.conteiner {
+.container {
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,9 +95,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin-left: 120px;
-  width: 1100px;
-  padding: 24px 0 0 50px;
+  padding: 24px 0 0 0;
 }
 
 .hero__main-title {
@@ -211,13 +210,11 @@ img {
 }
 
 .section {
-  height: 100vp;
+  height: 100vh;
   min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .section__title {
@@ -348,9 +345,16 @@ img {
 
 .reviews__display {
   width: 940px;
-  margin-left: 100px;
   background: #f8faf9;
   padding: 50px 45px 34px;
+  /*
+      &:before{
+          content: url("../components/img/decor/слой1.png");
+          position: relative;
+         margin-left: 813px;
+         margin-top: 80px;
+      }
+      */
 }
 
 .reviews__display-iner {
@@ -391,7 +395,7 @@ img {
 
 .reviews__switcer {
   display: inline-flex;
-  margin-left: 432px;
+  margin-left: 360px;
 }
 
 .reviews__switcer-sloi {
@@ -434,12 +438,17 @@ img {
 
 .section-display {
   position: relative;
-  background: url("../components/img/decor/Узоротзовы.png") left top 100% no-repeat;
+  background: url("../components/img/decor/клубника.png") left 90% top 10% no-repeat;
 }
 .section-display:after {
   content: url("../components/img/decor/Ягоды22.png");
-  position: relative;
-  margin-bottom: 15px;
+  position: absolute;
+  margin-top: 700px;
+}
+.section-display:before {
+  content: url("../components/img/decor/Узоротзовы.png");
+  position: absolute;
+  margin-top: 700px;
 }
 
 .reviews__switcer-sloi {
@@ -457,7 +466,6 @@ img {
 .order-section {
   background: url("../components/img/fon.png") no-repeat;
   width: 100%;
-  height: 652px;
   margin-left: -1px;
 }
 .order-section:before {
@@ -475,12 +483,11 @@ img {
 
 .form {
   display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .form__col {
   flex: 1;
+  width: 50%;
   margin-right: 20px;
 }
 .form__col:last-child {
@@ -506,7 +513,6 @@ img {
   padding: 18px 11px;
 }
 .form__input--texterea {
-  width: 450px;
   height: 180px;
   resize: none;
 }
@@ -528,10 +534,6 @@ img {
 .form__btns {
   margin-top: 46px;
   margin-bottom: 85px;
-}
-
-.form__col--left {
-  margin-left: 85px;
 }
 
 .radio {
