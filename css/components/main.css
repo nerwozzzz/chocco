@@ -70,7 +70,7 @@ img {
   background: url("../components/img/decor/chocolates.png") left 88% center no-repeat, url(../components/img/decor/узор1.png) right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  max-height: 650px;
   color: #ffffff;
   position: relative;
 }
