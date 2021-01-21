@@ -1,8 +1,9 @@
 .order-section{
+    
     background: url("../components/img/fon.png") no-repeat;
     width: 100%;
     
-    margin-left: -1px;
+    
 
     &:before{
         content: url("../components/img/decor/ягодаorder.png");
@@ -14,7 +15,7 @@
     &:after{
         content: url("../components/img/decor/листorder.png");
         position: absolute;
-       margin-left: 1150px;
+       margin-left: 90%;
        margin-top: 390px;
     }
 }

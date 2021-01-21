@@ -27,8 +27,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 940px;
-  height: 652px;
+  max-width: 1098px;
+  min-height: 652px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,7 +84,7 @@ img {
   content: url("../components/img/decor/Ягода2.png");
   position: absolute;
   bottom: -40px;
-  right: 91px;
+  right: 10%;
 }
 
 .hero__title-section {
@@ -118,6 +118,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.headline__title {
+  margin-top: 100px;
 }
 
 .menu__list {
@@ -212,7 +216,7 @@ img {
 
 .section {
   height: 100vh;
-  max-height: 650px;
+  max-height: 730px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -444,12 +448,14 @@ img {
 .section-display:after {
   content: url("../components/img/decor/Ягоды22.png");
   position: absolute;
-  margin-top: 700px;
+  margin-top: 38%;
+  margin-left: 0%;
 }
 .section-display:before {
   content: url("../components/img/decor/Узоротзовы.png");
   position: absolute;
-  margin-top: 700px;
+  margin-top: 38%;
+  margin-left: 0%;
 }
 
 .reviews__switcer-sloi {
@@ -467,7 +473,6 @@ img {
 .order-section {
   background: url("../components/img/fon.png") no-repeat;
   width: 100%;
-  margin-left: -1px;
 }
 .order-section:before {
   content: url("../components/img/decor/ягодаorder.png");
@@ -478,7 +483,7 @@ img {
 .order-section:after {
   content: url("../components/img/decor/листorder.png");
   position: absolute;
-  margin-left: 1150px;
+  margin-left: 90%;
   margin-top: 390px;
 }
 
@@ -488,7 +493,7 @@ img {
 
 .form__col {
   flex: 1;
-  width: 50%;
+  width: 459px;
   margin-right: 20px;
 }
 .form__col:last-child {
@@ -514,7 +519,7 @@ img {
   padding: 18px 11px;
 }
 .form__input--texterea {
-  height: 180px;
+  height: 152px;
   resize: none;
 }
 .form__input:focus {
@@ -627,5 +632,6 @@ img {
 
 .map {
   display: flex;
-  width: 100%;
+  width: 1100px;
+  height: 652px;
 }
