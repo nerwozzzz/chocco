@@ -1,7 +1,7 @@
 .section{
     
     height: 100vh;
-    max-height: 730px;
+    max-height: rem(650px);
    
     display: flex;
     flex-direction: column;
@@ -9,17 +9,18 @@
    
 }
 .section__title{
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: rem(100px);
     text-align: center;
     text-transform: uppercase;
 }
 .section-display{
-    margin-top: 160px;
+    margin-top: rem(160px);
 }
 .section__title-color{
     color: #365a49;
+    margin-top: rem(63px);
 }
 .section__map{
     width: 100%;
