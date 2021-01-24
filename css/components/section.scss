@@ -6,21 +6,41 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablets{
+        height: 1000px;
+    }
    
 }
 .section__title{
     font-size: rem(48px);
     font-weight: bold;
     margin-bottom: rem(100px);
+    
     text-align: center;
     text-transform: uppercase;
+
+    @include tablets{
+        margin-top: rem(182px);
+    }
+
+    
 }
 .section-display{
     margin-top: rem(160px);
+
+    @include tablets{
+        min-height: rem(1000px);
+        height: 100vh;
+    }
 }
 .section__title-color{
     color: #365a49;
     margin-top: rem(63px);
+
+    @include tablets{
+        margin-top: rem(172px);
+    }
 }
 .section__map{
     width: 100%;

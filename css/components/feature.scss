@@ -1,12 +1,12 @@
 .feature{
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
 }
 .feature__icon{
   
-    margin-right: 7px;
+    margin-right: rem(7px);
 }
 .feature__text{
-    font-size: 16px;
-    max-width: 85px;
+    font-size: rem(16px);
+    max-width: rem(85px);
 }

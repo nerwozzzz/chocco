@@ -1,11 +1,25 @@
 .benefits{
     display: flex;
+    
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+   
+        
+    
 }
 
 .benefits__item{
     flex: 1;
     padding: 0 3%;
     position: relative;
+
+    @include phones{
+        display: flex;
+        flex-direction: column;
+    }
 
     &:first-child{
         padding-left: 0;
@@ -23,8 +37,13 @@
     &:before {
         content: url("../components/img/decor/Shape.png");
         position: absolute;
-        top: 100px;
+        top: rem(100px);
         right: 0;
         transform: translateX(50%);
+
+        @include phones{
+            display: none;
+            
+        }
     }
 }
