@@ -96,7 +96,7 @@ img {
 @media screen and (max-width: 480px) {
   .hero {
     height: 100vh;
-    max-height: 61.1111111111rem;
+    min-height: 44.4444444444rem;
   }
 }
 .hero:before {
@@ -164,6 +164,11 @@ img {
   font-weight: bold;
   margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    margin-top: -40%;
+  }
 }
 
 .hero__title-desc {

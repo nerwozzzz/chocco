@@ -9,7 +9,7 @@
 
     @include phones{
         height: 100vh;
-    max-height: rem(1100px);
+     min-height: rem(800px);
     }
 
     
@@ -85,6 +85,11 @@
     font-weight: bold;
     margin-bottom: rem(15px);
     text-transform: uppercase;
+
+
+    @include phones{
+        margin-top: -40%;
+    }
 }
 .hero__title-desc{
     width: rem(480px);
