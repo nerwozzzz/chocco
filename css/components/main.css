@@ -89,13 +89,14 @@ img {
   background: url(../components/img/decor/узор1.png) right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
+  height: 652px;
   min-height: 36.1111111111rem;
   color: #ffffff;
   position: relative;
 }
 @media screen and (max-width: 480px) {
   .hero {
-    height: 100vh;
+    height: 800px;
     min-height: 44.4444444444rem;
   }
 }
@@ -145,7 +146,6 @@ img {
 }
 
 .hero__container {
-  background: url("../components/img/decor/chocolates.png") left 88% center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -162,6 +162,7 @@ img {
   font-size: 2.6666666667rem;
   line-height: 1.1;
   font-weight: bold;
+  margin-top: -6.1111111111rem;
   margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
 }
@@ -194,6 +195,8 @@ img {
   position: absolute;
   right: 20%;
   bottom: 10%;
+  width: 503px;
+  height: 532px;
 }
 @media screen and (max-width: 768px) {
   .hero-bar {
@@ -201,6 +204,12 @@ img {
     height: 367px;
     top: 10%;
   }
+}
+.hero-bar:before {
+  content: url("../components/img/decor/list1.png");
+  position: absolute;
+  margin-top: 0;
+  left: 0;
 }
 
 .header {
@@ -394,7 +403,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefits {
-    display: flex;
     flex-direction: column;
     height: 800px;
   }
@@ -407,8 +415,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefits__item {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
   }
 }
 .benefits__item:first-child {
@@ -436,6 +443,12 @@ img {
 .benefit {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: flex;
+    text-align: left;
+  }
+}
 
 .benefit__image-wrapper {
   display: inline-block;
@@ -451,6 +464,15 @@ img {
   .benefit__image-wrapper {
     display: flex;
     text-align: left;
+  }
+}
+
+.benefit__image {
+  margin-bottom: 1.0555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image {
+    margin-bottom: 0;
   }
 }
 
@@ -471,7 +493,7 @@ img {
   .benefit__title {
     display: flex;
     justify-content: start;
-    margin-left: 15%;
+    margin-left: 8%;
   }
 }
 
@@ -530,8 +552,7 @@ img {
 }
 
 .hero__container {
-  position: relative;
-  background: url("../components/img/decor/list1.png") right 15% top 25% no-repeat;
+  position: absolute;
 }
 .hero__container:before {
   content: url("../components/img/decor/Ягоды1.png");
@@ -762,7 +783,7 @@ img {
 .order-section:after {
   content: url("../components/img/decor/листorder.png");
   position: absolute;
-  margin-left: 63.8888888889rem;
+  left: 80%;
   margin-top: 21.6666666667rem;
 }
 @media screen and (max-width: 768px) {

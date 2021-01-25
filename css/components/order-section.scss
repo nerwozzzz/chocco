@@ -26,11 +26,12 @@
     &:after{
         content: url("../components/img/decor/листorder.png");
         position: absolute;
-       margin-left: rem(1150px);
+       left: 80%;
        margin-top: rem(390px);
 
        @include tablets{
         display: none;
-    }
-    }
+       }
+    } 
+    
 }

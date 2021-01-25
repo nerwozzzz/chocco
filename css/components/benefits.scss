@@ -2,7 +2,7 @@
     display: flex;
     
     @include phones{
-        display: flex;
+        
         flex-direction: column;
         height: 800px;
     }
@@ -17,8 +17,7 @@
     position: relative;
 
     @include phones{
-        display: flex;
-        flex-direction: column;
+        padding: 0;
     }
 
     &:first-child{

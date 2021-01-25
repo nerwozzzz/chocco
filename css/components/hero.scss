@@ -3,14 +3,18 @@
     background: url(../components/img/decor/узор1.png) right bottom no-repeat;
     background-color: $blue;
     height: 100vh;
+    height: 652px;
     min-height: rem(650px);
     color: #ffffff;
     position: relative;
 
     @include phones{
-        height: 100vh;
+        height: 800px;
+    
      min-height: rem(800px);
     }
+
+ 
 
     
 
@@ -66,7 +70,7 @@
     }
 }
 .hero__container{
-    background: url("../components/img/decor/chocolates.png") left 88% center no-repeat;
+    //background: url("../components/img/decor/chocolates.png") right 58% center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,6 +87,7 @@
     font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
+    margin-top: rem(-110px);
     margin-bottom: rem(15px);
     text-transform: uppercase;
 
@@ -108,15 +113,25 @@
     }
 }
 
+
 .hero-bar{
     position: absolute;
     right: 20%;
     bottom: 10%;
+    width: 503px;
+    height: 532px;
 
     @include tablets{
     width: 353px;
     height: 367px;
     top: 10%;
+    }
+
+    &:before{
+        content: url("../components/img/decor/list1.png");
+        position: absolute;
+        margin-top: 0;
+        left: 0;
     }
 
 }
