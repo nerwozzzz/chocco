@@ -11,9 +11,12 @@
     @include phones{
         height: 800px;
     
-     min-height: rem(800px);
     }
 
+    @include tablets {
+       height: 1000px;
+      
+    }
  
 
     
@@ -31,6 +34,10 @@
             display: none;
           
         }
+        @include phones {
+            display: none;
+          
+        }
        
     }
 
@@ -41,8 +48,14 @@
         right: rem(91px);
 
         @include tablets {
-            top: 37%;
+            top: 40%;
+            right: 20%;
           
+        }
+
+        @include phones{
+            top: 39%;
+            right: 0;
         }
 
     }
@@ -54,12 +67,13 @@
     @include tablets{
        width: 100%;
        flex: 1;
+       
        display: flex;
        flex-direction: column;
        justify-content: center; 
        align-items: center;
        text-align: center;
-       margin-top: 70%;
+       margin-top: 40%;
 
     }
     
@@ -93,7 +107,7 @@
 
 
     @include phones{
-        margin-top: -40%;
+        margin-top: -10%;
     }
 }
 .hero__title-desc{
@@ -104,19 +118,19 @@
 
     @include tablets{
         padding: 0 15%;
-        width: 550px;
+        width: 750px;
     }
 
     @include tablets{
         padding: 0 15%;
-        width: 462px;
+        width: 558px;
     }
 }
 
 
-.hero-bar{
+.bar{
     position: absolute;
-    right: 20%;
+    right: 10%;
     bottom: 10%;
     width: 503px;
     height: 532px;
@@ -125,13 +139,37 @@
     width: 353px;
     height: 367px;
     top: 10%;
+    left: 30%;
+    }
+
+    @include phones {
+        position: absolute;
+        width: 353px;
+    height: 367px;
+    top: 10%;
+    left: 10%;
     }
 
     &:before{
         content: url("../components/img/decor/list1.png");
         position: absolute;
-        margin-top: 0;
-        left: 0;
+        margin-top: 60%;
+        right: 0%;
+
+
+        @include phones {
+            position: absolute;
+            top: -25%;
+            left: -15%;
+          
+        }
+
+        @include tablets {
+            position: absolute;
+            top: -30%;
+            left: 45%;
+          
+        }
     }
 
 }

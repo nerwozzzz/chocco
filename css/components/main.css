@@ -97,7 +97,11 @@ img {
 @media screen and (max-width: 480px) {
   .hero {
     height: 800px;
-    min-height: 44.4444444444rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 1000px;
   }
 }
 .hero:before {
@@ -111,6 +115,11 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero:before {
+    display: none;
+  }
+}
 .hero:after {
   content: url("../components/img/decor/Ягода2.png");
   position: absolute;
@@ -119,7 +128,14 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero:after {
-    top: 37%;
+    top: 40%;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero:after {
+    top: 39%;
+    right: 0;
   }
 }
 
@@ -135,7 +151,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 70%;
+    margin-top: 40%;
   }
 }
 
@@ -168,7 +184,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero__main-title {
-    margin-top: -40%;
+    margin-top: -10%;
   }
 }
 
@@ -181,35 +197,59 @@ img {
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 15%;
-    width: 550px;
+    width: 750px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 15%;
-    width: 462px;
+    width: 558px;
   }
 }
 
-.hero-bar {
+.bar {
   position: absolute;
-  right: 20%;
+  right: 10%;
   bottom: 10%;
   width: 503px;
   height: 532px;
 }
 @media screen and (max-width: 768px) {
-  .hero-bar {
+  .bar {
     width: 353px;
     height: 367px;
     top: 10%;
+    left: 30%;
   }
 }
-.hero-bar:before {
+@media screen and (max-width: 480px) {
+  .bar {
+    position: absolute;
+    width: 353px;
+    height: 367px;
+    top: 10%;
+    left: 10%;
+  }
+}
+.bar:before {
   content: url("../components/img/decor/list1.png");
   position: absolute;
-  margin-top: 0;
-  left: 0;
+  margin-top: 60%;
+  right: 0%;
+}
+@media screen and (max-width: 480px) {
+  .bar:before {
+    position: absolute;
+    top: -25%;
+    left: -15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bar:before {
+    position: absolute;
+    top: -30%;
+    left: 45%;
+  }
 }
 
 .header {
@@ -558,7 +598,7 @@ img {
   content: url("../components/img/decor/Ягоды1.png");
   position: absolute;
   bottom: 10%;
-  right: 15%;
+  right: -10%;
 }
 @media screen and (max-width: 768px) {
   .hero__container:before {
@@ -566,16 +606,28 @@ img {
     left: 30%;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__container:before {
+    position: absolute;
+    left: 5%;
+  }
+}
 .hero__container:after {
   content: url("../components/img/decor/list2.png");
   position: absolute;
   bottom: -5%;
-  right: 15%;
+  right: -10%;
 }
 @media screen and (max-width: 768px) {
   .hero__container:after {
     top: 35%;
-    left: 50%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__container:after {
+    position: absolute;
+    left: 40%;
   }
 }
 

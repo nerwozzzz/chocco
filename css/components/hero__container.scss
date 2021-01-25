@@ -9,11 +9,17 @@
         content: url("../components/img/decor/Ягоды1.png");
         position: absolute;
         bottom: 10%;
-        right: 15%;
+        right: -10%;
         
         @include tablets{
             top: 25%;
             left: 30%;
+        }
+
+        @include phones {
+            position: absolute;
+            left: 5%;
+          
         }
 
     }
@@ -21,11 +27,17 @@
         content: url("../components/img/decor/list2.png");
         position: absolute;
         bottom: -5%;
-        right: 15%;
+        right: -10%;
 
         @include tablets{
             top: 35%;
-            left: 50%;
+            left: 40%;
+        }
+
+        @include phones {
+            position: absolute;
+            left: 40%;
+          
         }
     }
 
