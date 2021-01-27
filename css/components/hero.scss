@@ -1,7 +1,7 @@
 .hero{
     background-color: $blue;
     height: 100vh;
-    max-height: rem(650px);
+    min-height: rem(650px);
     color: #ffffff;
     position: relative;
 
@@ -12,9 +12,16 @@
         right: 0%;
         bottom: -5%;
 
+        @include tablets{
+            position: absolute;
+            top: 30%;
+            left: 20%;
+        }
+
         @include phones{
             position: absolute;
             top: 26%;
+            left: 0%;
         }
     }
 
@@ -24,8 +31,15 @@
         right: 0%;
         bottom: 0%;
 
+        @include tablets{
+            position: absolute;
+            top: 6%;
+        }
+
         @include phones{
             position: absolute;
+            width: 512px;
+            height: 648px;
             
             top: 0%;
             left: 0%;
@@ -50,6 +64,11 @@
 
     @include phones{
         margin-top: rem(550px);
+    }
+
+    @include tablets{
+        
+        margin-top: rem(582px);
     }
     
 }
@@ -82,7 +101,7 @@
     padding-right: 10%;
 
     @include tablets{
-        padding: 0 15%;
+        padding: 0 5%;
     }
 }
 
@@ -95,6 +114,12 @@
         top: 5%;
     }
 
+    @include tablets{
+        position: absolute;
+        top: 6%;
+        left: 15%;
+    }
+
     
 }
 
@@ -104,6 +129,10 @@
     bottom: 0%;
 
     @include phones{
+        display: none;
+    }
+
+    @include tablets{
         display: none;
     }
 }

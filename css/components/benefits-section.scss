@@ -9,7 +9,13 @@
 
       @include phones{
         display: none;
-    }
+    
+        }
+
+        @include tablets{
+            position: absolute;
+            top: 6%;
+        }
     }
 
  
