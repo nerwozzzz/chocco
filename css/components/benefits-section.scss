@@ -1,31 +1,25 @@
 .benefits-section{
     
     position: relative;
-    //background: url("../components/img/decor/list.png") left top 57% no-repeat;
 
-    &:after {
-        content: url("../components/img/decor/list.png");
-        position: absolute;
-        left: 0;
-        top: 57%;
 
-        @include tablets{
-            left: 0;
-            top: 10%;
-        }
+    &:after{
+      content: url("../components/img/decor/list.png");
+      position: absolute;
 
-        @include phones{
-            display: none;
-        }
-
+      @include phones{
+        display: none;
     }
+    }
+
+ 
 
     &:before {
         content: url("../components/img/decor/malina.png");
         position: absolute;
         bottom: -30%;
         left: 0;
-
+        
         @include phones{
             display: none;
         }

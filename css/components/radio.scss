@@ -14,7 +14,9 @@
         }
     }
 
-    
+    @include tablets{
+        display: inline;
+    }
 }
 .radio__elem{
     display: none;
@@ -58,7 +60,5 @@
     color: #365a49;
     margin-left: rem(10px);
 
-    @include tablets{
-        margin-left: rem(15px);
-    }
+    
 }

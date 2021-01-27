@@ -8,7 +8,7 @@
 
     @include phones{
         flex-direction: column;
-        padding: 0 1%;
+        padding: 0 2%;
     }
     
 }
@@ -65,17 +65,11 @@ margin-right: rem(20px);
     display: flex;
     flex-wrap: wrap;
 
-    @include tablets{
-        display: flex;
-    flex-wrap: wrap;
-
-    }
-
     @include phones{
         display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 .form__title{
@@ -87,7 +81,7 @@ margin-right: rem(20px);
     margin-top: rem(46px);
     margin-bottom: rem(85px);
 
-    @include tablets{
+    @include phones{
         display: flex;
         justify-content: center;
     }
