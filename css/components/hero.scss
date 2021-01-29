@@ -108,17 +108,25 @@
 .chocco{
     position: absolute;
     right: 0%;
-
-    @include phones{
-        position: absolute;
-        top: 5%;
-    }
+    top: 20%;
+    width: 503px;
+    height: 523px;
 
     @include tablets{
         position: absolute;
         top: 6%;
         left: 15%;
     }
+
+    @include phones{
+        position: absolute;
+        top: 5%;
+        left: -5%;
+        width: 475px;
+        height: 478px;
+    }
+
+    
 
     
 }
