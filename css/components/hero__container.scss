@@ -1,48 +1,5 @@
 .hero__container{
-    position: absolute;
-    
-    //background: url("../components/img/decor/list1.png") right 0% top 80%  no-repeat;
-
-    
-
-    &:before {
-        content: url("../components/img/decor/Ягоды1.png");
-        position: absolute;
-        bottom: 10%;
-        right: -10%;
-        
-        @include tablets{
-            top: 25%;
-            left: 30%;
-        }
-
-        @include phones {
-            position: absolute;
-            left: 5%;
-          
-        }
-
-    }
-    &:after{
-        content: url("../components/img/decor/list2.png");
-        position: absolute;
-        bottom: -5%;
-        right: -10%;
-
-        @include tablets{
-            top: 35%;
-            left: 40%;
-        }
-
-        @include phones {
-            position: absolute;
-            left: 40%;
-          
-        }
-    }
-
-  
-   
+    position: relative;
 }
 
 .hero__container-img {

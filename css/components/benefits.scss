@@ -1,14 +1,10 @@
 .benefits{
     display: flex;
-    
+
     @include phones{
         
         flex-direction: column;
-        height: 800px;
     }
-   
-        
-    
 }
 
 .benefits__item{
@@ -42,7 +38,6 @@
 
         @include phones{
             display: none;
-            
         }
     }
 }
