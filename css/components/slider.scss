@@ -1,0 +1,222 @@
+a,
+a:visited,
+a:active,
+a:focus {
+  
+  text-decoration: none;
+}
+
+
+
+.simple-slider-container {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  border: none;
+}
+
+.arrow {
+  font-size: 30px;
+}
+
+.slider {
+  display: flex;
+  
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.items {
+  display: flex;
+  position: relative;
+  color: #444;
+
+  right: 0;
+  transition: right .3s;
+  border: none;
+}
+
+.item {
+  display: flex;
+  
+
+  background-color: #F8FAF9;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 1000px;
+  border: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+
+}
+
+.slaid{
+    background: #F8FAF9;
+ 
+}
+
+
+
+.mainmenubtn{
+    background: none;
+    color: silver;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.mainmenubtn:hover{
+    background: none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+     
+    @include tablets{
+        display: none;
+    }
+  
+}
+
+.dropdown-child{
+   background: rgb(231, 229, 229);
+   text-decoration: none;
+    
+    
+    position: absolute;
+    left: 95%;
+    top: 0%;
+    display: none;
+    min-width: rem(273px);
+
+    
+
+
+   
+}
+
+.dropdown__img{
+    display: inline;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown__content{
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+.dropdown__title{
+    margin-left: 20px;
+    
+}
+
+.subtitle{
+    
+    margin-left: 55px;
+}
+.dropdown__link{
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+
+.dropdown:hover .dropdown-child{
+     display: block;
+ }
+
+.container__slider{
+     display: flex;
+     background: #F8FAF9;
+
+     @include tablets{
+         
+         flex-direction: column;
+         align-items: center;
+     }
+
+ }
+
+ .slider__list{
+     display: flex;
+     margin-top: 24px;
+ }
+ .slider__img-content{
+    
+     width: 50%;
+     margin-top: 30%;
+
+     @include tablets{
+        margin-top: 86px;
+       margin-right: 20%;
+     }
+
+     
+ }
+ .slider__content{
+     width: 50%;
+     margin-top: 20%;
+      
+
+     @include tablets{
+        margin-top: 0%;
+        
+     }
+     
+ }
+.slider__text{
+    font-size: 56px;
+    line-height: 1;
+
+    @include tablets{
+        width: 672px;
+margin-left: -45%;
+
+    }
+
+    
+}
+.slider__title-content{
+    margin-top: 23px;
+
+    
+}
+
+.slider__title{
+    margin-top: 23px;
+    padding-right: 15%;
+
+    @include tablets{
+        
+
+
+    }
+
+    
+}
+.slider__right{
+    margin-left: 44px;
+}
+.slider__subtitle{
+    font-weight: bold;
+}
+.slider__left-praice{
+    font-size: 60px;
+}
+.slider__right-btn{
+    margin-top: 24px;
+}
+
