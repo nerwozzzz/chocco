@@ -9,6 +9,7 @@
     &:after{
         content: url("../components/img/decor/comp.png");
         position: absolute;
+       
         right: 0%;
         bottom: -5%;
 
@@ -20,6 +21,7 @@
 
         @include phones{
             position: absolute;
+           
             top: 26%;
             left: 0%;
         }
@@ -121,9 +123,9 @@
     @include phones{
         position: absolute;
         top: 5%;
-        left: -5%;
-        width: 475px;
-        height: 478px;
+         left: -3%;
+        width: 435px;
+        height: 438px;
     }
 
     
