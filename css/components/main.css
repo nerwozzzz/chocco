@@ -929,6 +929,7 @@ img {
 @media screen and (max-width: 768px) {
   .hamburger-menu {
     display: flex;
+    z-index: 1000;
   }
 }
 
@@ -974,7 +975,7 @@ img {
 /* контейнер меню */
 .menu__box {
   display: block;
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   top: 0;
   left: 100%;
