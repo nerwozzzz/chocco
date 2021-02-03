@@ -7,44 +7,65 @@
 
 
     &:after{
-        content: url("../components/img/decor/comp.png");
+        content: "";
+        background-image: url("./img/decor/comp.png");
         position: absolute;
-       
+        background-repeat: no-repeat;
+        background-size: cover;
+      width: 463px;
+      height: 364px;
         right: 0%;
-        bottom: -5%;
+        bottom: -3%;
 
         @include tablets{
+           
             position: absolute;
-            top: 30%;
-            left: 20%;
+  width: 326px;
+  height: 255px;
+            top: 24%;
+            left: 35%;
         }
 
         @include phones{
-            position: absolute;
-           
-            top: 26%;
-            left: 0%;
-        }
+            
+                    
+                    position: absolute;
+                    width: 299px;
+                    height: 235px;
+                    left: 21%;
+                    top: 17%;
+                }
+        
+        
     }
 
     &:before{
-        content: url("../components/img/decor/узор1.png");
+        content: "";
+        background-image: url("./img/decor/узор1.png");
+        
+        background-repeat: no-repeat;
         position: absolute;
+        width: 512px;
+        height: 648px;
         right: 0%;
         bottom: 0%;
 
         @include tablets{
             position: absolute;
+
             top: 6%;
+            width: 512px;
+        height: 648px;
         }
 
         @include phones{
             position: absolute;
-            width: 512px;
-            height: 648px;
+            background-size: cover;
+            width: 324px;
+            height: 410px;
             
-            top: 0%;
-            left: 0%;
+            top: 5%;
+            right: 0%;
         }
     }
 
@@ -53,6 +74,7 @@
     width: 46%;
 
     @include tablets{
+      
        width: 100%;
        flex: 1;
        display: flex;
@@ -64,13 +86,11 @@
     
     }
 
-    @include phones{
-        margin-top: rem(550px);
-    }
+  
 
     @include tablets{
         
-        margin-top: rem(582px);
+        margin-top: rem(82px);
     }
     
 }
@@ -114,18 +134,23 @@
     width: 503px;
     height: 523px;
 
+    
+
     @include tablets{
+        
         position: absolute;
-        top: 6%;
-        left: 15%;
+        width: 353px;
+        height: 367px;
+        top: 10%;
+        left: 30%;
     }
 
     @include phones{
         position: absolute;
         top: 5%;
-         left: -3%;
-        width: 435px;
-        height: 438px;
+         left: 15%;
+        width: 325px;
+        height: 328px;
     }
 
     

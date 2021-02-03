@@ -8,9 +8,21 @@
     display: flex;
 
     &:after{
-        content: url("../components/img/decor/слой1.png");
+        content: "";
+        background-image: url("../components/img/decor/слой1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
+        width: 127px;
+        height: 167px;
         right: 0%;
+
+        @include phones{
+            position: absolute;
+        width: 121px;
+        height: 151px;
+        right: 0%;
+        }
     }
 
     @include tablets{
@@ -48,14 +60,16 @@
     margin-bottom: rem(36px);
     width: rem(463px);
 
-    @include phones{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     @include tablets{
         padding: 0 0%;
     }
+
+    @include phones{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+   
 }
 .reviews__author{
     font-size: rem(18px);

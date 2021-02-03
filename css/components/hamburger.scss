@@ -48,8 +48,8 @@
   }
   
   .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
+    display: flex; 
+    align-items: center; 
     position: fixed;
     top: 20px;
     left: 93%;
@@ -58,7 +58,7 @@
     cursor: pointer;
     z-index: 1;
   }
-  /* добавляем "гамбургер" */
+  
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -80,7 +80,7 @@
   
   
   
-  /* контейнер меню */
+  
   .menu__box {
       
     display: block;
@@ -97,7 +97,7 @@
     background-color: #313131;
     
   }
-  /* элементы меню */
+  
   .menu__burgeritem {
     display: block;
     padding: 12px 24px;
