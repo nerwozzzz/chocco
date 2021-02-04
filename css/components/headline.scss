@@ -6,18 +6,21 @@
 .headline__subtitle{
     text-align: center;
     padding: 0 32%;
-    
-
-    @include phones{
-       
-       text-align: center;
-       padding: 0 5%;
-    }
 
     @include tablets{
         text-align: center;
         padding: 0 20%;
     }
+
+
+    @include phones{
+       
+       text-align: center;
+       padding: 0 0%;
+       font-size: 14px;
+    }
 }
+
+    
 
 

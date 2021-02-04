@@ -1,0 +1,8 @@
+.reviews__container{
+    display: flex;
+    flex-direction: column;
+    
+    @include phones{
+        margin-top: 37%;
+    }
+}

@@ -7,9 +7,14 @@
     flex-direction: column;
     justify-content: center;
 
-    @include phones{
-        min-height: 1000px;
+    @include tablets{
+        min-height: initial;
     }
+    @include phones{
+        // // min-height: 1000px;
+        // max-width: ;
+    }
+    
 
     
    
@@ -20,13 +25,22 @@
     margin-bottom: rem(100px);
     text-align: center;
     text-transform: uppercase;
+
+    @include phones{
+        font-size: 25px;
+        margin-bottom: 0%;
+    }
 }
-.section-display{
-    margin-top: rem(160px);
-}
+// .section-display{
+//     margin-top: rem(160px);
+// }
 .section__title-color{
     color: #365a49;
     margin-top: rem(63px);
+
+    @include phones{
+        margin-top: 10px;
+    }
 }
 .section__map{
     width: 100%;

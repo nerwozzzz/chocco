@@ -18,7 +18,18 @@ a:focus {
 }
 
 .arrow {
-  font-size: 30px;
+  width: 14px;
+  height: 27px;
+ 
+  @include tablets{
+    width: 14px;
+    height: 27px;
+  }
+
+  @include phones{
+    width: 34px;
+    height: 47px;
+  }
 }
 
 .slider {
@@ -27,6 +38,22 @@ a:focus {
   width: 1000px;
   overflow: hidden;
   margin: 0 10px;
+
+  &:after{
+      content: "";
+      background-image: url("./img/decor/decorr.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 0%;
+      top: 45%;
+
+  }
+
+  @include phones{
+      display: flex;
+      align-items: center;
+  }
 }
 
 .items {
@@ -45,8 +72,8 @@ a:focus {
 
   background-color: #F8FAF9;
   box-sizing: border-box;
-  width: 1000px;
-  height: 1000px;
+  width: 100%;
+//   height: 1000px;
   border: none;
 }
 
@@ -138,15 +165,24 @@ li {
      display: block;
  }
 
-.container__slider{
+.container__sliders{
      display: flex;
      background: #F8FAF9;
+     width: 1000px;
 
      @include tablets{
          
          flex-direction: column;
          align-items: center;
      }
+
+     @include phones{
+         display: flex;
+        align-items: center;
+        
+       
+       
+    }
 
  }
 
@@ -155,7 +191,7 @@ li {
      margin-top: 24px;
  }
  .slider__img-content{
-    
+    // display: flex;
      width: 50%;
      margin-top: 30%;
 
@@ -163,6 +199,15 @@ li {
         margin-top: 86px;
        margin-right: 20%;
      }
+
+     @include phones{
+        align-items: center;
+        margin-right: 70%;
+        width: 350px;
+        height: 150px;
+    }
+
+    
 
      
  }
@@ -185,6 +230,10 @@ li {
         width: 672px;
 margin-left: -45%;
 
+    }
+
+    @include phones{
+        padding: 0 30%;
     }
 
     

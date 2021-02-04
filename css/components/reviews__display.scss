@@ -2,6 +2,7 @@
     
     background: #f8faf9;
     padding: rem(50px) rem(45px) rem(34px);
+    margin-top: 10%;
 
 }
 .reviews__display-iner{
@@ -19,8 +20,8 @@
 
         @include phones{
             position: absolute;
-        width: 121px;
-        height: 151px;
+        width: 91px;
+        height: 115px;
         right: 0%;
         }
     }
@@ -65,8 +66,9 @@
     }
 
     @include phones{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 15%;
+        font-size: 15px;
     }
 
    
@@ -79,8 +81,13 @@
 .reviews__switcer{
     display: inline-flex;
     margin-left: rem(360px);
+
     @include tablets{
         margin-left: 30%;
+     }
+
+     @include phones{
+         margin-left: 20%;
      }
     
 }

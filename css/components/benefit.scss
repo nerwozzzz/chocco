@@ -21,6 +21,8 @@
     @include phones{
         display: flex;
         text-align: left;
+        width: 90px;
+        height: 90px;
     }
 
 }
@@ -40,7 +42,7 @@
     @include phones{
         display: flex;
         justify-content: start;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 }
 .benefit__desc{
@@ -48,8 +50,9 @@
     padding: 0 8%;
 
     @include phones{
-        padding: 0 15%;
+        padding: 0 10%;
         justify-content: space-between;
+        font-size: 15px;
         
     }
 }

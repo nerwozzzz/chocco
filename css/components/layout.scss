@@ -34,9 +34,14 @@ body {
 .container {
     margin: 0 auto;
     width: 95%;
+    min-height: 642px;
     max-width: $containerWidth;
    
     position: relative;
+
+    @include phones{
+        min-height: 568px;
+    }
 }
 
 .container-slider{
