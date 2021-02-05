@@ -456,6 +456,198 @@
                     <script src="sliderDomManipulations.js"></script>
                 </div>
             </section>
+            <section class="section team-section">
+                <div class="container">
+                    <div class="section__title">команда</div>
+                    <ul class="team team--version--desktop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./css/components/img/avatar/boris.png" alt="boris.png" class="team__avatar">
+                            </div>
+                            <button class="team__title">Борис Федорович
+                                <img src="./css/components/img/icon/Polygon2.png" alt="Polygon2.png" class="team__icon">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+
+                                    <h3 class="htitle">Главный технолог</h3>
+                                    <p class="ptitle">Отвечает за вкусовые качества
+                                        и калорийность.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./css/components/img/avatar/alla.png" alt="alla.png" class="team__avatar">
+                            </div>
+                            <button class="team__title">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+
+                                    <h3 class="htitle">Специалист по упаковке
+                                    </h3>
+                                    <p class="ptitle">Автор запоминающегося стиля
+                                        наших батончиков.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./css/components/img/avatar/kirill.png" alt="kirill.png" class="team__avatar">
+                            </div>
+                            <button class="team__title">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+
+                                    <h3 class="htitle">Оператор</h3>
+                                    <p class="ptitle">С радостью поможет подобрать батончики и оформить заказ.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./css/components/img/avatar/mila.png" alt="mila.png" class="team__avatar">
+                            </div>
+                            <button class="team__title">Мила Рыжкова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+
+                                    <h3 class="htitle">PR, маркетинг
+                                    </h3>
+                                    <p class="ptitle">По всем вопросам сотрудничества
+                                        и рекламы писать только Миле.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                        var acc = document.getElementsByClassName("team__title");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+
+                    <ul class="team team--version--mobile">
+                        <li class="team__items">
+                            <button class="team__title">Борис Федорович
+                                <img src="./css/components/img/icon/Polygon2.png" alt="Polygon2.png" class="team__icon">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./css/components/img/avatar/boris.png" alt="boris.png"
+                                            class="team__avatar">
+                                    </div>
+
+                                    <h3 class="htitle">Главный технолог</h3>
+                                    <p class="ptitle">Отвечает за вкусовые качества
+                                        и калорийность.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__items">
+
+                            <button class="team__title">Алла Иванова
+
+                            </button>
+
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./css/components/img/avatar/alla.png" alt="alla.png"
+                                            class="team__avatar">
+                                    </div>
+
+                                    <h3 class="htitle">Специалист по упаковке
+                                    </h3>
+                                    <p class="ptitle">Автор запоминающегося стиля
+                                        наших батончиков.
+
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="team__items">
+
+                            <button class="team__title">Кирилл Матросов</button>
+
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./css/components/img/avatar/kirill.png" alt="kirill.png"
+                                            class="team__avatar">
+                                    </div>
+                                    <h3 class="htitle">Оператор</h3>
+                                    <p class="ptitle">С радостью поможет подобрать батончики и оформить заказ.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__items">
+
+                            <button class="team__title">Мила Рыжкова</button>
+
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./css/components/img/avatar/mila.png" alt="mila.png"
+                                            class="team__avatar">
+                                    </div>
+                                    <h3 class="htitle">PR, маркетинг
+                                    </h3>
+                                    <p class="ptitle">По всем вопросам сотрудничества
+                                        и рекламы писать только Миле.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                        var acc = document.getElementsByClassName("team__title");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+                </div>
+            </section>
             <section class="section section-display">
                 <div class="container reviews__container">
 
