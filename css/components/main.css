@@ -1386,6 +1386,14 @@ li {
   }
 }
 
+.team__icon {
+  margin-top: 5%;
+}
+
+.team__icon--none {
+  display: none;
+}
+
 .active, .team__title:hover {
   background-color: none;
 }
@@ -1526,15 +1534,10 @@ li {
 .accord__trigger--3 {
   background-image: url(./img/decor/jag.png);
 }
-.accord__trigger::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(97, 96, 96, 0.4);
+@media screen and (max-width: 480px) {
+  .accord__trigger {
+    width: 40px;
+  }
 }
 .accord__content-wrap {
   width: 0;
@@ -1550,4 +1553,97 @@ li {
   color: #ffffff;
   height: 100%;
   padding: 30px 80px 30px 38px;
+}
+@media screen and (max-width: 480px) {
+  .accord__content {
+    padding: 20px;
+  }
+}
+
+.title__accord {
+  position: absolute;
+  font-size: 78px;
+  font-weight: bold;
+  color: #ffffff;
+  top: 10%;
+  left: 10%;
+}
+
+.tregger__title {
+  position: absolute;
+  transform: rotate(270deg);
+  font-size: 18px;
+  bottom: 33%;
+  color: #fff;
+  font-weight: bold;
+}
+
+#player {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buratino {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.buratino__img {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.buratino__length {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: slategray;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.buratino__length--other {
+  width: 58px;
+  height: 4px;
+}
+
+.buratino__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: slategray;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: tomato;
+}
+.modal.fancybox-content {
+  padding: o !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #ffffff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  color: #000;
 }
