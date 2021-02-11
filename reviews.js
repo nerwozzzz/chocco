@@ -1,4 +1,5 @@
 class SlideShow {
+
     constructor(selector) {
         this.target = document.querySelector(selector)
         this.content = this.tanget.querySelector('[data-show-content]')
@@ -13,6 +14,7 @@ class SlideShow {
         })
     }
     setPositionItems() {
+
         this.content.style.position = 'relative'
 
         for (const item of this.items) {
@@ -22,6 +24,7 @@ class SlideShow {
         }
     }
     setActiveSlide(index) {
+        index.preventDefault();
         this.items.forEach((item, i) => {
             if (index === i + 1) {
                 item.style.position = 'relative'
@@ -36,6 +39,7 @@ class SlideShow {
         this.setActiveNav(index)
     }
     setActiveNav(index) {
+        index.preventDefault();
         for (const nav of this.nav.children) {
             if (nav === this.nav.children[index - 1]) {
                 nav.classList.add(`${nav.classList[0]}--active`)
