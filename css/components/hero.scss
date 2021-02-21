@@ -116,9 +116,13 @@
     margin-bottom: rem(15px);
     text-transform: uppercase;
 
+    @include tablets{
+        margin-top: 40%;
+    }
     @include phones{
-        font-size: 25px;
+        font-size: 20px;
         padding: 0 10%;
+        margin-top: -5%;
     }
 }
 .hero__title-desc{
