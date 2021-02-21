@@ -4,37 +4,38 @@ $('.form').submit(e => {
 
 
 
-    // const form = $(e.currentTarget);
-    // const name = form.find("[name='name']");
+    const form = $(e.currentTarget);
+
+    const name = form.find("[name='name']");
     // const name = form.find("[name='phone']");
     // const name = form.find("[name='comment']");
-    // const to = form.find("[name='to']");
+    const to = form.find("[name='to']");
 
-    // [name, phone, comment, to].forEach((field) => {
+    [name, to].forEach((field) => {
 
 
 
-    //     field.removeClass("input-error")
-    //     if (field.val().trim() == "") {
-    //         field.addClass("input-error");
-    //     }
-    // });
+        field.removeClass("input-error")
+        if (field.val().trim() == "") {
+            field.addClass("input-error");
+        }
+    });
 
-    // const errorFields = form.find(".input-error")
+    const errorFields = form.find(".input-error")
 
-    // if (errorFields.length == 0) {
-    //     $.ajax({
-    //         url: "https://webdev-api.loftschool.com/sendmail",
-    //         method: "post",
-    //         data: {
-    //             name: name.val(),
-    //             phone: phone.val(),
-    //             comment: comment.val(),
-    //             to: to.val(),
-    //         },
-    //     });
+    if (errorFields.length == 0) {
+        $.ajax({
+            url: "https://webdev-api.loftschool.com/sendmail",
+            method: "post",
+            data: {
+                name: name.val(),
+                phone: phone.val(),
+                comment: comment.val(),
+                to: to.val(),
+            },
+        });
 
-    // }
+    }
 
 
     $.fancybox.open({
@@ -50,5 +51,12 @@ $(".app-submit-btn").click(e => {
 
     $.fancybox.close();
 
+
+})
+
+$(".app-submit-modal").click(e => {
+    e.preventDefault();
+
+    $.fancybox.close();
 })
 

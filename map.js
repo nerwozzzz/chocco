@@ -7,8 +7,11 @@ const init = () => {
     });
 
     const coords = [
-        [55.749726, 37.584359]
-        [55.722543, 37.566889]
+        [55.749726, 37.584359],
+        [55.722543, 37.566889],
+        [55.75, 37.50],
+        [55.75, 37.71],
+        [55.70, 37.70]
 
     ];
 
@@ -18,6 +21,8 @@ const init = () => {
         iconImageHref: "./img/rrr.svg",
         iconImageSize: [46, 57],
         iconImageOffset: [-35, -52]
+
+
     });
 
     coords.forEach(coord => {
